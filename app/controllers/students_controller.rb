@@ -12,7 +12,7 @@ class StudentsController < ApplicationController
     @student = set_student
     new_state = !@student.active
     @student.update(active: new_state)
-    redirect 'show'
+    redirect_to @student
   end
 
   private
