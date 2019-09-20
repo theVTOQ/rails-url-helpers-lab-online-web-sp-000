@@ -10,7 +10,7 @@ class StudentsController < ApplicationController
 
   def activate
     @student = set_student
-    render "activate"
+    render "show"
   end
 
   private
