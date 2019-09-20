@@ -8,7 +8,7 @@ class StudentsController < ApplicationController
   def show
   end
 
-  def activate
+  def toggle_activate
     @student = set_student
     @student.active = !@student.active
     render "show"
